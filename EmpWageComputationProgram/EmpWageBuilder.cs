@@ -13,6 +13,8 @@ namespace EmpWageComputationProgram
             Console.WriteLine("Welcome To Employee Wage Computation Program");
             //Constant
             int IS_PRESENT = 1;
+            int IS_FULL_TIME = 1;
+            int IS_PART_TIME = 0;
             int EMP_RATE_PER_HOUR = 20;
 
             //Variables  
@@ -20,10 +22,18 @@ namespace EmpWageComputationProgram
             int empWage;
             Random rand = new Random();
             int empCheck = rand.Next(0, 2);
+            int workingTime = rand.Next(0, 2);
             if (empCheck == IS_PRESENT)
             {
                 Console.WriteLine("Employee is Present");
-                empHrs = 8;
+                if (workingTime == IS_FULL_TIME)
+                {
+                    empHrs = 8;
+                }
+                else if (workingTime == IS_PART_TIME)
+                {
+                    empHrs = 4;
+                }
             }
             else
             {
