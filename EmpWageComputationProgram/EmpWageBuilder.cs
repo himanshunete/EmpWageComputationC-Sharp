@@ -18,6 +18,7 @@ namespace EmpWageComputationProgram
             int EMP_RATE_PER_HOUR = 20;
             int NUM_OF_WORKING_DAYS = 20;
             int MAX_NUM_OF_HOURS = 100;
+
             //Variable
             int totalEmpWage = 0;
             int totalEmpHrs = 0;
